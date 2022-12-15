@@ -19,7 +19,7 @@ export class App extends Component {
   };
 
   componentDidMout() {
-    console.log('componentDidMout')
+    // console.log('componentDidMout')
 
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
