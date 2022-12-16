@@ -18,8 +18,8 @@ export class App extends Component {
     filter: "",
   };
 
-  componentDidMout() {
-    // console.log('componentDidMout')
+  componentDidMount() {
+    // console.log('componentDidMount')
 
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
@@ -29,7 +29,7 @@ export class App extends Component {
     }
   }
 
-  componentDidUdate(prevProps, prevState,) {
+  componentDidUpdate(prevProps, prevState,) {
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts))
     }
